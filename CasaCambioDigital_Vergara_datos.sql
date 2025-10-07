@@ -36,7 +36,7 @@ INSERT INTO tasa_cambio_usd (id_moneda, tasa_usd, fecha_actualizacion, activa) V
 ((SELECT id_moneda FROM moneda WHERE codigo = 'BCH'), 600.00, NOW(), TRUE);
 
 
--- Tramsacciones de referencia base
+-- Transacciones de referencia base
 INSERT INTO transaccion (fecha, id_usuario, id_moneda_in, id_moneda_out, monto_entrada, monto_salida, tasa_in_usd, tasa_out_usd) VALUES
 (NOW(), 3, 3, 1, 1.00000000, 124000.00, 3, 1),
 (NOW(), 7, 3, 1, 0.10000000, 12400.00, 3, 1),

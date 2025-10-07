@@ -237,7 +237,7 @@ JOIN tasa_cambio_usd tc_in ON t.tasa_in_usd = tc_in.id_tasa
 JOIN tasa_cambio_usd tc_out ON t.tasa_out_usd = tc_out.id_tasa
 WHERE u.pais = 'Chile';
 
--- Vista2 Operaciones BTC
+-- Vista2 Transacciones BTC
 CREATE VIEW v_transacciones_con_btc AS
 SELECT *
 FROM transaccion 
